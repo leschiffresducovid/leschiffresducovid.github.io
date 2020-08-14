@@ -1,1 +1,1 @@
-start cmd /k set PATH=%PATH%;C:\ProgramData\GitHub\leschiffresducovid.github.io\hugo\bin\
+start cmd /k set PATH=%PATH%;C:\ProgramData\GitHub\hugo\bin\
