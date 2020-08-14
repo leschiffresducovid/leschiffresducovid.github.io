@@ -1,101 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Les chiffres du Covid-19 en France</title>
-    <link>https://example.com/</link>
-    <description>Recent content on Les chiffres du Covid-19 en France</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://example.com/posts/intro/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/intro/</guid>
-      <description>Une situation exceptionnelle En 2020, la France s&amp;rsquo;est retrouvée dans une situation sanitaire complexe:
- nombre de services hospitaliers ont accueilli un nombre inhabituel de malades touchés par un même virus ce virus apparut comme une nouvelle cause de décès ces décès vinrent s&amp;rsquo;ajouter à la tendance normale observée  Les mesures prises pour palier aux effets de la crise sanitaire seront jugées les meilleures ou non après un travail d&amp;rsquo;investigations que feront certainement des chercheurs (scientifiques, historiens, journalistes, etc.</description>
-    </item>
-    
-    <item>
-      <title>Les sources</title>
-      <link>https://example.com/posts/sources/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/sources/</guid>
-      <description>Les sources de données  data.gouv.fr
-départements français
-Les ressources &amp;lt;a name=&amp;quot;ressources&amp;gt; Le site a été créé avec le générateur de sites web Hugo écrit en Go. Le thème utilisé est m10c.
-Les graphiques sont des composants de Highcharts.
-Certaines couleurs ont été choisies à l&amp;rsquo;aide de ces outils:
- https://coolors.co https://labs.tineye.com/multicolr http://html-color.org/fr/gradients.php  Le code des icônes a été produit à l&amp;rsquo;aide de Tabler Icons.</description>
-    </item>
-    
-    <item>
-      <title>Les données hospitalières générales en France</title>
-      <link>https://example.com/posts/h1basic/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h1basic/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les hospitalisations par classe d&#39;âge</title>
-      <link>https://example.com/posts/h3hosp/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h3hosp/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les hospitalisations par département</title>
-      <link>https://example.com/posts/h1hosp/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h1hosp/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les hospitalisations par département et les pics de zone</title>
-      <link>https://example.com/posts/h1hosp2/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h1hosp2/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les soins intensifs et les réanimations par classe d&#39;âge</title>
-      <link>https://example.com/posts/h3rea/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h3rea/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les soins intensifs et les réanisations par département</title>
-      <link>https://example.com/posts/h1rea/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h1rea/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-    <item>
-      <title>Les soins intensifs et les réanisations par département et les pics de zone</title>
-      <link>https://example.com/posts/h1rea2/</link>
-      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/h1rea2/</guid>
-      <description>Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;</description>
-    </item>
-    
-  </channel>
-</rss>
