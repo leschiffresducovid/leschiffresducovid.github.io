@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Les hospitalisations par classe d&#39;âge // Les chiffres du Covid-19 en France</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="NR" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://example.com/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Les hospitalisations par classe d&#39;âge"/>
+<meta name="twitter:description" content="Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;"/>
+
+    <meta property="og:title" content="Les hospitalisations par classe d&#39;âge" />
+<meta property="og:description" content="Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#34495e&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/h3hosp/" />
+<meta property="article:published_time" content="2020-08-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-13T00:00:00+00:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://example.com"><img class="app-header-avatar" src="/ambulance.jpg" alt="NR" /></a>
+      <h1>Les chiffres du Covid-19 en France</h1>
+      <p>Une autre présentation des données officielles</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/leschiffresducovid" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="mailto:leschiffresducovid@gmx.com" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-mail">
+  <title>mail</title>
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Les hospitalisations par classe d&#39;âge</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 13, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://example.com/tags/covid/">covid</a></div>
+      <nav class="post-nav">
+        <a class="prev" href="/posts/h1basic/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="5" y1="12" x2="9" y2="16" />
+              <line x1="5" y1="12" x2="9" y2="8" />
+            </svg>
+            <span>previous:</span>
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Les données hospitalières générales en France</span>
+            <span class="prev-text nav-mobile"></span>
+          </a>
+        <a class="next" href="/posts/h1hosp/">
+            <span>, next:</span>
+            <span class="next-text nav-default">Les hospitalisations par département</span>
+            <span class="next-text nav-mobile"></span>
+            <i class="iconfont icon-right"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="15" y1="16" x2="19" y2="12" />
+              <line x1="15" y1="8" x2="19" y2="12" />
+            </svg>
+          </a>
+      </nav>
+      </div>
+    </header>
+    <div class="post-content">
+      <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/annotations.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<script>
+     Highcharts.setOptions({
+    
+      lang: {
+        months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+        weekdays: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+        shortMonths: ['jan', 'fév', 'mar', 'avr', 'mai', 'juin', 'juil', 'aoû', 'sep', 'oct', 'nov', 'déc'],
+      },
+       colors: ['#1abc9c','#3498db','#9b59b6','#2ecc71','#34495e','#f1c40f','#e67e22','#e74c3c','#ecf0f1','#95a5a6'],
+       title: {
+         style: {
+           color: '#afbac4'
+         },
+         text: ''
+       },
+       subtitle: {
+         style: {
+           color: '#afbac4' 
+         },
+         text: ''
+       },
+       legend: {
+         enabled: true,
+         itemStyle: { "color": "#c1c1c2", "cursor": "pointer", "fontSize": "12px", "fontWeight": "bold", "textOverflow": "ellipsis" }
+       },
+       credits: {
+         enabled: false
+       },
+       exporting: { enabled: false },
+       chart: {
+         backgroundColor: '#353B43',
+       },
+       
+       yAxis: {
+         gridLineWidth: 1,
+         gridLineColor: '#353B43',
+         labels: {
+           style: {
+             color: '#afbac4' 
+             }
+           },
+         title: {
+           style: {
+             color: '#afbac4'
+             },
+           text: null,
+           },
+         },
+    
+       xAxis: {
+         gridLineWidth: 0,
+         labels: {
+           style: {
+             color: '#afbac4'
+             }
+           },
+         }
+     });
+    </script>
+    
+    
+    
+<h1 id="lhistorique-des-hospitalisations-en-france-par-classe-dâge-a-namegraphiquea">L&rsquo;historique des hospitalisations en France par classe d&rsquo;âge <a name="graphique"></a></h1>
+<h3 id="relativisé-avec-un-classement-uniforme-des-semaines">relativisé avec un classement uniforme des semaines</h3>
+<div id="graph-h3hosp" style="height: 500px; width:1000px"></div>
+
+<script>
+    $.get("/files/h3-hosp.csv", function(csv) {
+        var c = Highcharts.chart('graph-h3hosp', {
+            chart: {
+                type: 'bubble',
+                plotBorderWidth: 1,
+                zoomType: 'x',
+                inverted: true,
+            },
+            plotOptions: {
+                    bubble: {
+                        minSize: 1,
+                        maxSize: 30,
+                        marker:{
+                            fillOpacity: 0.5,
+                            lineWidth: 2,
+                        }
+                    },
+            },
+            tooltip: {
+                pointFormat: '<b>{point.name}</b><br/><b>{point.z}</b> {point.series.name} soit un rang historique pour la classe d âge à <b>{point.y}%</b><br><br/><br/>{point.date}<br/>',
+            },
+            legend: {
+                enabled: false,
+                verticalAlign: 'top',
+            },
+            title: {
+                text: "Les hospitalisations par classe d'âge"
+            },
+            subtitle: {
+                text: 'semaines rangées de manière uniforme'
+            },
+            xAxis: {
+                type:'category',
+                
+            },
+            yAxis:{
+                min:-9,
+                max: 109,
+                startOnTick: false,
+                endOnTick: false,
+                labels: {
+                  format: '{value}%',
+                }
+            },
+
+            data: {
+                csv: csv,
+                seriesMapping: [{y: 3, z: 4, name: 0, date:2, category:1, color:5}],
+                
+                
+                complete: function(data) {
+                categoriesIntoSeries(data);
+                
+                }
+            },
+        });
+    
+
+    })
+</script>
+
+<script>
+    function categoriesIntoSeries(data) {
+        rows = data.series[0].data;
+        data.series = [];
+        
+        
+        for (i = 0; i < rows.length; i++) {
+            cat = rows[i].category;
+            
+            catExists = false;
+            data.series.length
+            for (j = 0; j < data.series.length; j++) {
+                
+                
+                if (data.series[j].name == cat) {
+                
+                data.series[j].data.push(rows[i]);
+                
+                catExists = true;
+                }
+            }
+            if (!catExists) {
+                
+                data.series.push({name: cat, data: [rows[i]]})
+                
+            }
+        }
+    }
+</script>
+
+
+
+<h3 id="relativisé-selon-le-pic-de-la-zone">relativisé selon le pic de la zone</h3>
+<div id="graph-h3hosp2" style="height: 500px; width:1000px"></div>
+
+<script>
+    $.get("/files/h3-hosp2.csv", function(csv) {
+        var c = Highcharts.chart('graph-h3hosp2', {
+            chart: {
+                type: 'bubble',
+                plotBorderWidth: 1,
+                zoomType: 'x',
+                inverted: true,
+            },
+            plotOptions: {
+                    bubble: {
+                        minSize: 1,
+                        maxSize: 30,
+                        marker:{
+                            fillOpacity: 0.5,
+                            lineWidth: 2,
+                        }
+                    },
+            },
+            tooltip: {
+                pointFormat: '<b>{point.name}</b><br/><b>{point.z}</b> {point.series.name} soit <b>{point.y}%</b> du maximum enregistré<br><br/><br/>{point.date}<br/>',
+            },
+            legend: {
+                enabled: false,
+                verticalAlign: 'top',
+            },
+            title: {
+                text: "Les hospitalisations par classe d'âge"
+            },
+            subtitle: {
+                text: 'semaines rangées suivant le niveau de criticité estimé par la valeur maximale'
+            },
+            xAxis: {
+                type:'category',
+                
+            },
+            yAxis:{
+                min:-9,
+                max: 109,
+                startOnTick: false,
+                endOnTick: false,
+                labels: {
+                  format: '{value}%',
+                }
+            },
+
+            data: {
+                csv: csv,
+                seriesMapping: [{y: 3, z: 4, name: 0, date:2, category:1, color:5}],
+                
+                
+                complete: function(data) {
+                categoriesIntoSeries(data);
+                
+                }
+            },
+        });
+    
+
+    })
+</script>
+
+<script>
+    function categoriesIntoSeries(data) {
+        rows = data.series[0].data;
+        data.series = [];
+        
+        
+        for (i = 0; i < rows.length; i++) {
+            cat = rows[i].category;
+            
+            catExists = false;
+            data.series.length
+            for (j = 0; j < data.series.length; j++) {
+                
+                
+                if (data.series[j].name == cat) {
+                
+                data.series[j].data.push(rows[i]);
+                
+                catExists = true;
+                }
+            }
+            if (!catExists) {
+                
+                data.series.push({name: cat, data: [rows[i]]})
+                
+            }
+        }
+    }
+</script>
+
+
+
+<h3 id="incohérences-relevées">Incohérences relevées</h3>
+<p>Il existe des différences entre le total présenté dans les fichiers de classe d&rsquo;âge et la répartition effective.
+Cela induit que nous ne trouverons pas les mêmes totaux entre les graphiques des départements et les graphiques des classes d&rsquo;âge.</p>
+<div id="graph-h3incoherence" style="height: 300px; width:1000px"></div>
+
+<script>
+  $.get("/files/h3-incoherence.csv", function(csv) {
+    var c = Highcharts.chart('graph-h3incoherence', {
+      chart: {
+        type: 'line',
+        plotBorderWidth: 0,
+        zoomType: 'xy',
+        inverted: false,
+      },
+      
+      tooltip: {
+        
+        shared: true
+      },
+      legend: {
+        enabled: true,
+        verticalAlign: 'bottom',
+      },
+      title: {
+        text: "Les personnes manquantes dans la répartition par classe d'âge"
+      },
+
+      data: {
+        csv: csv,
+      },
+      
+    });
+  
+    
+
+  })
+</script>
+
+
+
+<p>source <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h1 id="explications-des-graphiques-a-nameexplicationsa">Explications des graphiques <a name="explications"></a></h1>
+<figure class="highcharts-figure">
+    <div id="bubble3-explanations-a" style="height: 300px; width:500px"></div>
+    <div id="bubble3-explanations-b" style="height: 300px; width:500px"></div>
+    <div id="bubble3-explanations-c" style="height: 300px; width:500px"></div>
+</figure>
+
+
+<script>
+    Highcharts.chart('bubble3-explanations-a', {
+    
+        chart: {
+            type: 'bubble',
+            events: {
+                load: function() {
+                    var chart = this;
+                    chart.renderer.label('La couleur détermine la position dans le temps de la valeur:', 10, 70)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    })
+                }
+            },
+    
+            plotBorderWidth: 0,
+            zoomType: '',
+        },
+        tooltip: {
+            useHTML: true,
+            formatter: function(){
+                point=this.point;
+                html='<b>' + point.name + '</b>'
+                html+= '</br>' + point.date
+                return html
+            }
+        },
+    
+        legend: {
+            enabled: false,
+            verticalAlign: 'top',
+        },
+    
+        xAxis:{
+            visible: true,
+            type:'category',
+            tickInterval: 10,
+            lineWidth:0,    
+            offset: -90
+        },
+        yAxis:{
+            visible: false,
+        },
+    
+    
+        series: [{
+            data: [
+                { name:'dernière', x: 10, y: 10, z: 10, color: '#3498db', 'date':'09-08-2020'},
+                { name:'précédente', x: 20, y: 10, z: 10, color: '#ffffff', 'date':'02-08-2020'},
+                { name: 'récente', x: 30, y: 10, z: 10, color: '#e74c3c', 'date':'26-07-2020'},
+                { name: '-', x: 35, y: 10, z: 10, color:'#E86333', 'date':'-'},
+                { name:'--', x: 40, y: 10, z: 10, color:'#EB8626', 'date':'--'},
+                { name: '---', x: 45, y: 10, z: 10, color:'#ED9D1D', 'date':'---'},
+                { name:'+ ancienne', x: 50, y: 10, z: 10, color:'#f1c40f', 'date':'22-03-2020'},
+    
+            ]
+        }],
+
+
+    
+    });
+    
+</script>
+<script>
+    Highcharts.chart('bubble3-explanations-b', {
+    
+        chart: {
+            type: 'bubble',
+            events: {
+                load: function() {
+                    var chart = this;
+                    chart.renderer.label('Dans le premier graphique,', 10, 48)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label("la position de la bulle représente le percentile dans une classe d'âge,", 10, 65)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label('la taille de la bulle représente le nombre de cas en absolu:', 10, 82)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+
+
+                }
+            },
+    
+            plotBorderWidth: 0,
+            zoomType: '',
+            
+            
+        },
+        
+
+        tooltip: {
+            useHTML: true,
+            formatter: function(){
+                point=this.point;
+                html='<b>' + point.name + '</b>'
+                html+= '</br>' + point.date
+                return html
+            }
+        },
+    
+        legend: {
+            enabled: false
+        },
+    
+        xAxis:{
+            visible: true,
+            type:'category',
+            tickInterval: 10,
+            lineWidth:0,    
+            offset: -90
+        },
+        yAxis:{
+            visible: false,
+        },
+    
+    
+        series: [{
+            data: [
+                { name:'minimum', x: 10, y: 30, z: 1, color: '#E86333', 'value':'0'},
+                { name:'', x: 20, y: 30, z: 8, color: '#E86333', 'value':'1333'},
+                { name: '', x: 30, y: 30, z: 15, color: '#E86333', 'value':'2500'},
+                { name:'', x: 40, y: 30, z: 22, color: '#E86333', 'value':'3833'},
+                { name: 'maximum', x: 50, y: 30, z: 30, color: '#E86333', 'value':'5000'},
+            ]
+        }],
+
+
+    
+    });
+    
+</script>
+<script>
+    Highcharts.chart('bubble3-explanations-c', {
+    
+        chart: {
+            type: 'bubble',
+            events: {
+                load: function() {
+                    var chart = this;
+                    chart.renderer.label('Dans le second graphique,', 10, 28)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label('la position de la bulle représente la valeur', 10, 45)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label("ramenée à la maximale enregistrée pour une classe d'âge,", 10, 62)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label('la taille de la bulle représente le nombre de cas en absolu:', 10, 79)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+
+
+                }
+            },
+    
+            plotBorderWidth: 0,
+            zoomType: '',
+        },
+        tooltip: {
+            useHTML: true,
+            formatter: function(){
+                point=this.point;
+                html='<b>' + point.value + '</b>'
+                html+= '</br>' + point.z
+                return html
+            }
+        },
+    
+        legend: {
+            enabled: false
+        },
+    
+        xAxis:{
+            visible: true,
+            type:'category',
+            tickInterval: 10,
+            lineWidth:0,    
+            offset: -90
+        },
+        yAxis:{
+            visible: false,
+        },
+    
+    
+        series: [{
+            data: [
+                { name:'', x: 1, y: 30, z: 1, color: '#E86333', 'value':'valeur miscule'},
+                { name:'', x: 8, y: 30, z: 8, color: '#E86333', 'value':'petite valeur'},
+                { name: '', x: 50, y: 30, z: 50, color: '#E86333', 'value':'valeur moyenne'},
+                { name:'', x: 90, y: 30, z: 90, color: '#E86333', 'value':'proche de la maximale'},
+                { name: '', x: 100, y: 30, z: 100, color: '#E86333', 'value':'valeur maximale'},
+            ]
+        }],
+
+
+    
+    });
+    
+</script>
+    
+
+
+
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/">data.gouv.fr</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    <div class="post-footer">
+      
+      
+      <nav class="post-nav">
+        <a class="prev" href="/posts/h1basic/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="5" y1="12" x2="9" y2="16" />
+              <line x1="5" y1="12" x2="9" y2="8" />
+            </svg>
+            <span>previous:</span>
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Les données hospitalières générales en France</span>
+            <span class="prev-text nav-mobile"></span>
+          </a>
+        <a class="next" href="/posts/h1hosp/">
+            <span>, next:</span>
+            <span class="next-text nav-default">Les hospitalisations par département</span>
+            <span class="next-text nav-mobile"></span>
+            <i class="iconfont icon-right"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z"/>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <line x1="15" y1="16" x2="19" y2="12" />
+              <line x1="15" y1="8" x2="19" y2="12" />
+            </svg>
+          </a>
+      </nav>
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
