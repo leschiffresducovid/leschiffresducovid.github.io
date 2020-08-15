@@ -10,7 +10,7 @@ date = "2020-08-14"
 
 [départements français](https://www.regions-et-departements.fr/departements-francais)
 
-# Les ressources <a name="ressources></a>
+# Les ressources <a name="ressources"></a>
 
 Le site a été créé avec le générateur de sites web [Hugo](https://gohugo.io) écrit en [Go](https://golang.org). Le thème utilisé est [m10c](https://themes.gohugo.io/hugo-theme-m10c/).
 

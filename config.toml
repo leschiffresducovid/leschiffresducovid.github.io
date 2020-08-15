@@ -3,6 +3,7 @@ title = "Les chiffres du Covid-19 en France"
 themesDir = "../leschiffresducovid.github.io/"
 theme = "m10c"
 paginate = 20
+publishDir = "docs"
 
 [markup.goldmark.renderer]
   unsafe = true

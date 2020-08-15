@@ -28,7 +28,7 @@
       <guid>https://leschiffresducovid.github.io/posts/sources/</guid>
       <description>Les sources de données  data.gouv.fr
 départements français
-Les ressources &amp;lt;a name=&amp;quot;ressources&amp;gt; Le site a été créé avec le générateur de sites web Hugo écrit en Go. Le thème utilisé est m10c.
+Les ressources  Le site a été créé avec le générateur de sites web Hugo écrit en Go. Le thème utilisé est m10c.
 Les graphiques sont des composants de Highcharts.
 Certaines couleurs ont été choisies à l&amp;rsquo;aide de ces outils:
  https://coolors.co https://labs.tineye.com/multicolr http://html-color.org/fr/gradients.php  Le code des icônes a été produit à l&amp;rsquo;aide de Tabler Icons.</description>
