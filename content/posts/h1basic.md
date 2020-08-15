@@ -13,7 +13,7 @@ date = "2020-08-13"
 
 {{< graph-h1basic1 >}}
 
-# L'évolution du taux des hospitalisations sur les soins intensifs/réanimations
+# L'évolution du taux des soins intensifs/réanimations sur les hospitalisations
 
 {{< graph-h1basic2 >}}
 
