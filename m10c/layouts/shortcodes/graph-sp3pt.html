@@ -1,8 +1,8 @@
-<div id="graph-h3pt2" style="height: 500px; width:1000px"></div>
+<div id="graph-sp3pt" style="height: 500px; width:1000px"></div>
 
 <script>
-    $.get("/files/h13-pt2.csv", function(csv) {
-        var c = Highcharts.chart('graph-h3pt2', {
+    $.get("/files/sp3-pt.csv", function(csv) {
+        var c = Highcharts.chart('graph-sp3pt', {
             chart: {
                 type: 'bubble',
                 plotBorderWidth: 1,
@@ -30,7 +30,7 @@
                 text: "Le taux de positivité des tests"
             },
             subtitle: {
-                text: 'semaines rangées suivant le niveau de criticité estimé par la valeur maximale'
+                text: 'semaines rangées de manière uniforme'
             },
             xAxis: {
                 type:'category',

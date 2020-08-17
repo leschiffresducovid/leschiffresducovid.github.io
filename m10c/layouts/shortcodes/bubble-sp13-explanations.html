@@ -1,11 +1,11 @@
 <figure class="highcharts-figure">
-    <div id="bubble4-explanations-a" style="height: 300px; width:500px"></div>
-    <div id="bubble4-explanations-b" style="height: 300px; width:500px"></div>
+    <div id="bubble-sp13-explanations-a" style="height: 300px; width:500px"></div>
+    <div id="bubble-sp13-explanations-b" style="height: 300px; width:500px"></div>
 </figure>
 
 
 <script>
-    Highcharts.chart('bubble4-explanations-a', {
+    Highcharts.chart('bubble-sp13-explanations-a', {
     
         chart: {
             type: 'bubble',
@@ -70,7 +70,7 @@
 </script>
 
 <script>
-    Highcharts.chart('bubble4-explanations-b', {
+    Highcharts.chart('bubble-sp13-explanations-b', {
     
         chart: {
             type: 'bubble',
@@ -82,12 +82,12 @@
                     .css({
                         color: '#ffffff',
                     });
-                    chart.renderer.label("ramenée à la maximale enregistrée en France,", 10, 62)
+                    chart.renderer.label("en absolu pour la catégorie,", 10, 62)
                     .add()
                     .css({
                         color: '#ffffff',
                     });
-                    chart.renderer.label('la taille de la bulle représente le nombre de cas en absolu:', 10, 79)
+                    chart.renderer.label('la taille de la bulle représente le nombre de cas positifs', 10, 79)
                     .add()
                     .css({
                         color: '#ffffff',
@@ -105,7 +105,8 @@
             formatter: function(){
                 point=this.point;
                 html='<b>' + point.value + '</b>'
-                html+= '</br>' + point.z
+                html+='</br><b>' + point.x + '</b>% taux de positivité'
+                html+= '</br><b>' + point.z + '</b> cas positifs'
                 return html
             }
         },
@@ -117,7 +118,7 @@
         xAxis:{
             visible: true,
             type:'category',
-            tickInterval: 10,
+            tickInterval: 2,
             lineWidth:0,    
             offset: -90
         },
@@ -128,11 +129,9 @@
     
         series: [{
             data: [
-                { name:'', x: 1, y: 30, z: 1, color: '#E86333', 'value':'valeur minuscule'},
-                { name:'', x: 8, y: 30, z: 8, color: '#E86333', 'value':'petite valeur'},
-                { name: '', x: 50, y: 30, z: 50, color: '#E86333', 'value':'valeur moyenne'},
-                { name:'', x: 90, y: 30, z: 90, color: '#E86333', 'value':'proche de la maximale'},
-                { name: '', x: 100, y: 30, z: 100, color: '#E86333', 'value':'valeur maximale'},
+                { name:'', x: 1, y: 30, z: 5, color: '#E86333', 'value':'petit %, petit nombre de cas'},
+                { name:'', x: 8, y: 30, z: 30, color: '#E86333', 'value':'moyen %, nombre moyen de cas'},
+                { name: '', x: 15, y: 30, z: 30, color: '#E86333', 'value':'grand %, nombre moyen de cas'},
             ]
         }],
 
