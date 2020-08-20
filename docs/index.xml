@@ -5,10 +5,21 @@
     <link>https://leschiffresducovid.fr/</link>
     <description>Recent content on Les chiffres du Covid-19 en France</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leschiffresducovid.fr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La situation au 16 août 2020</title>
+      <link>https://leschiffresducovid.fr/posts/20200816situation/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leschiffresducovid.fr/posts/20200816situation/</guid>
+      <description>Une position historique dans les hôpitaux relativement confortable Au dimanche 16 août 2020, nous relevons en France 4820 hospitalisations liées au COVID-19 et 353 personnes en soins intensifs ou réanimations.
+Pour les hospitalisations, c&amp;rsquo;est un point bas historique; quant aux réanimations, si on constate une baisse par rapport à la semaine passée, le point bas avait été atteint la semaine précédente (2 août 2020) avec 345 cas.
+Nous repassons malgré tout la barre symbolique des 1000 personnes décédées, avec 1023 personnes succombant au virus.</description>
+    </item>
     
     <item>
       <title>Le taux de positivité par classe d&#39;âge</title>
@@ -136,17 +147,6 @@ This document is a brief primer on using Go templates.</description>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://leschiffresducovid.fr/posts/20200816situation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leschiffresducovid.fr/posts/20200816situation/</guid>
-      <description>0000000000000+++ title = &amp;ldquo;La situation au 16 août 2020&amp;rdquo; tags = [&amp;ldquo;covid&amp;rdquo;] date = &amp;ldquo;2020-08-18&amp;rdquo; +++
-Une position historique dans les hôpitaux relativement confortable Au dimanche 16 août 2020, nous relevons en France 4820 hospitalisations liées au COVID-19 et 353 personnes en soins intensifs ou réanimations.
-Pour les hospitalisations, c&amp;rsquo;est un point bas historique; quant aux réanimations, si on constate une baisse par rapport à la semaine passée, le point bas avait été atteint la semaine précédente (2 août 2020) avec 345 cas.</description>
     </item>
     
   </channel>

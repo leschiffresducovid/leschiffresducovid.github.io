@@ -4,16 +4,31 @@
   
   <url>
     <loc>https://leschiffresducovid.fr/tags/covid/</loc>
-    <lastmod>2020-08-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://leschiffresducovid.fr/posts/sp13/</loc>
-    <lastmod>2020-08-17T00:00:00+00:00</lastmod>
+    <loc>https://leschiffresducovid.fr/posts/20200816situation/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://leschiffresducovid.fr/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leschiffresducovid.fr/posts/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leschiffresducovid.fr/tags/</loc>
+    <lastmod>2020-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://leschiffresducovid.fr/posts/sp13/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -49,16 +64,6 @@
   
   <url>
     <loc>https://leschiffresducovid.fr/posts/h1rea2/</loc>
-    <lastmod>2020-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leschiffresducovid.fr/posts/</loc>
-    <lastmod>2020-08-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leschiffresducovid.fr/tags/</loc>
     <lastmod>2020-08-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -120,10 +125,6 @@
   <url>
     <loc>https://leschiffresducovid.fr/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://leschiffresducovid.fr/posts/20200816situation/</loc>
   </url>
   
   <url>
