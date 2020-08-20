@@ -1,0 +1,36 @@
+<div id="graph-h3incoherence" style="height: 300px; width:1000px"></div>
+
+<script>
+  $.get("/files/h3-incoherence.csv", function(csv) {
+    var c = Highcharts.chart('graph-h3incoherence', {
+      chart: {
+        type: 'line',
+        plotBorderWidth: 0,
+        zoomType: 'xy',
+        inverted: false,
+      },
+      
+      tooltip: {
+        //pointFormat: '<b>{point.name}</b><br/><b>{point.z}</b> {point.series.name} soit un rang historique pour la classe d âge à <b>{point.y}%</b><br><br/><br/>{point.date}<br/>',
+        shared: true
+      },
+      legend: {
+        enabled: true,
+        verticalAlign: 'bottom',
+      },
+      title: {
+        text: "Les personnes manquantes dans la répartition par classe d'âge"
+      },
+
+      data: {
+        csv: csv,
+      },
+      //f(series)
+    });
+  
+    // f(c);
+
+  })
+</script>
+
+

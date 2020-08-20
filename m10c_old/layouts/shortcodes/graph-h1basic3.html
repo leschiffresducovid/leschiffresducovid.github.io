@@ -1,0 +1,75 @@
+<div id="graph-h1-basic3" style="height: 500px; width:1000px"></div>
+
+<script>
+    $.get("/files/h1-basic3.csv", function(csv) {
+        var c = Highcharts.chart('graph-h1-basic3', {
+            chart: {
+                type: 'column',
+                plotBorderWidth: 0,
+                zoomType: 'x',
+                inverted: false,
+            },
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            yAxis: {
+                //min: 0,
+                gridLineWidth: 0.30,
+                gridLineColor: '#afbac4',
+                gridLineDashStyle: 'solid',
+                plotLines: [{
+                    color: 'red', // Color value
+                    width: 1,
+                    value: 0,
+                    dashStyle: 'solid',
+                },]
+            },
+
+            tooltip: {
+                //pointFormat: '{point.name}{point.y}{point.series.name}{point.date}{point.x}',
+                shared: true
+            },
+            legend: {
+                enabled: true,
+                verticalAlign: 'bottom',
+            },
+            title: {
+                text: ""
+            },
+
+            data: {
+                csv: csv,
+            },
+        });
+
+        c.addSeries({
+            name: 'détérioration',
+            type: 'polygon',
+            data: [[1585000000000,0],[1585000000000,12500],[1585000000000 + 123 * 100000000 , 12500],[1585000000000 + 123 * 100000000,0]],
+            color: 'rgba(185,41,45,0.4)',
+            events: {
+                mouseOver() {
+                    this.group.toBack()
+                }
+            }
+        });
+        c.addSeries({
+            name: 'amélioration',
+            type: 'polygon',
+            data: [[1585000000000,0],[1585000000000,-5000],[1585000000000 + 123 * 100000000 , -5000],[1585000000000 + 123 * 100000000,0]],
+            color: 'rgba(53,189,91,0.4)',
+            events: {
+                mouseOver() {
+                    this.group.toBack()
+                }
+            }
+        });
+    })
+</script>
+
+

@@ -1,0 +1,111 @@
+<div id="graph-h1hosp" style="height: 3000px; width:1000px"></div>
+
+<script>
+    $.get("/files/h1-hosp.csv", function(csv) {
+        var c = Highcharts.chart('graph-h1hosp', {
+            chart: {
+                type: 'bubble',
+                plotBorderWidth: 1,
+                zoomType: 'x',
+                inverted: true,
+            },
+            plotOptions: {
+                    bubble: {
+                        minSize: 1,
+                        maxSize: 100,
+                        marker:{
+                            fillOpacity: 0.5,
+                            lineWidth: 2,
+                        }
+                    },
+            },
+            tooltip: {
+                pointFormat: '<b>{point.name}</b><br/><b>{point.z}</b> {point.series.name} soit un rang historique pour la zone à <b>{point.y}%</b><br><br/><br/>{point.date}<br/>',
+            },
+            legend: {
+                enabled: false,
+                verticalAlign: 'top',
+            },
+            title: {
+                text: 'Les hospitalisations par département'
+            },
+            subtitle: {
+                text: 'semaines rangées de manière uniforme'
+            },
+            xAxis: {
+                type:'category',
+                //categories: ['Project 1', 'Project 2', 'Project 3']
+            },
+            yAxis:{
+                min:-9,
+                max: 109,
+                startOnTick: false,
+                endOnTick: false,
+                labels: {
+                  format: '{value}%',
+                }
+            },
+
+            data: {
+                csv: csv,
+                seriesMapping: [{y: 3, z: 4, name: 0, date:2, category:1, color:5}],
+                //seriesMapping: [{y: 1, z: 2, name: 0, date:3, category:4}],
+                
+                complete: function(data) {
+                categoriesIntoSeries(data);
+                
+                }
+            },
+            //f(series)
+        });
+    
+        // f(c);
+
+    })
+</script>
+
+<script>
+    
+    function f(chart){
+        //console.log("stop");
+        //console.debug(chart);
+        //debugger
+        for (i=0; i<chart.series.length; i++){
+            for (j=0; j<chart.series[i].points.length; j++){
+                //console.debug(chart.series[i].points[j])
+                //debugger
+                //chart.series[i].points[j].color='green'
+                //debugger
+            }
+        }
+    }
+    function categoriesIntoSeries(data) {
+        rows = data.series[0].data;
+        data.series = [];
+        //console.log(rows)
+        //debugger
+        for (i = 0; i < rows.length; i++) {
+            cat = rows[i].category;
+            //console.debug(cat);
+            catExists = false;
+            data.series.length
+            for (j = 0; j < data.series.length; j++) {
+                //console.log(j)
+                //console.log(data.series[j])
+                if (data.series[j].name == cat) {
+                // Add a data point to existing series
+                data.series[j].data.push(rows[i]);
+                //debugger
+                catExists = true;
+                }
+            }
+            if (!catExists) {
+                // When category is encountered for the first time, create a series
+                data.series.push({name: cat, data: [rows[i]]})
+                //data.series[data.series.length-1].color='grey'
+            }
+        }
+    }
+</script>
+
+
