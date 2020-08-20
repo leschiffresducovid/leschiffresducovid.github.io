@@ -40,7 +40,10 @@ En définitive, nous serions dans une situation plutôt satisfaisante dans l'abs
 
 En conclusion, le résumé de la situation par le <a href="https://solidarites-sante.gouv.fr/actualites/presse/communiques-de-presse/article/point-de-situation-covid-19-communique-de-presse-du-13-aout-2020" target="_blank">Ministère des Solidarités et de la Santé du jeudi 13 août 2020</a>:
     
-    "Les indicateurs de suivi de l'épidémie sur le territoire national continuent de se défrader. Le nombre de nouveaux confirmés de COVID-19 augmente régulièrement de même que le nombre des admissions hospitalières."
+    "Les indicateurs de suivi de l'épidémie sur le territoire national
+    continuent de se dégrader.
+    Le nombre de nouveaux confirmés de COVID-19 augmente régulièrement
+    de même que le nombre des admissions hospitalières."
 
 est à mettre en perspective avec les éléments cités ci-dessus.
 
