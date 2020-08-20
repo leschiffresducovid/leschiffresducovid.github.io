@@ -34,7 +34,7 @@ La Guyane et la Réunion sont à des niveaux d'hospitalisations élevés <a href
 Concernant Paris, le taux des hospitalisations est très bas (9% du pic) et à un **minimum pour les réanimations** (<a href="../h1rea2/" target="_blank">4% du pic</a>).
 
 
-## Des alarmes publics très bruyantes
+## Des alertes publiques très bruyantes
 
 En définitive, nous serions dans une situation plutôt satisfaisante dans l'absolu, si ce n'est que le **taux de contamination pourrait influer sur la tension dans les services hospitaliers dans les prochaines semaines**. Nous n'avons pas encore observé de corrélation entre le taux de positivité des tests et le le nombre d'hospitalisations, nous étudierons ce point avec attention prochainement.
 
