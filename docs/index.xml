@@ -12,10 +12,10 @@
     
     <item>
       <title>La situation au 16 août 2020</title>
-      <link>https://leschiffresducovid.fr/posts/20200816situation/</link>
+      <link>https://leschiffresducovid.fr/posts/situation20200816/</link>
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://leschiffresducovid.fr/posts/20200816situation/</guid>
+      <guid>https://leschiffresducovid.fr/posts/situation20200816/</guid>
       <description>Une position historique dans les hôpitaux relativement confortable Au dimanche 16 août 2020, nous relevons en France 4820 hospitalisations liées au COVID-19 et 353 personnes en soins intensifs ou réanimations.
 Pour les hospitalisations, c&amp;rsquo;est un point bas historique; quant aux réanimations, si on constate une baisse par rapport à la semaine passée, le point bas avait été atteint la semaine précédente (2 août 2020) avec 345 cas.
 Nous repassons malgré tout la barre symbolique des 1000 personnes décédées, avec 1023 personnes succombant au virus.</description>
@@ -116,37 +116,6 @@ Les ressources  Le site a été créé avec le générateur de sites web Hugo é
 Les graphiques sont des composants de Highcharts.
 Certaines couleurs ont été choisies à l&amp;rsquo;aide de ces outils:
  https://coolors.co https://labs.tineye.com/multicolr http://html-color.org/fr/gradients.php  Le code des icônes a été produit à l&amp;rsquo;aide de Tabler Icons.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://leschiffresducovid.fr/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://leschiffresducovid.fr/posts/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://leschiffresducovid.fr/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://leschiffresducovid.fr/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://leschiffresducovid.fr/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://leschiffresducovid.fr/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>
