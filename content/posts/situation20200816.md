@@ -11,7 +11,7 @@ date = "2020-08-18"
 
 Pour les hospitalisations, c'est un **point bas historique**; quant aux réanimations, si on constate une baisse par rapport à la semaine passée, le point bas avait été atteint la semaine précédente (2 août 2020) avec 345 cas.
 
-Nous repassons malgré tout la barre symbolique des 1000 personnes décédées, avec 1023 personnes succombant au virus. Toutefois, cela a été la 3e semaine la moins meutrière depuis le début de l'épidémie.
+Le nombre de décès a été plus important que la semaine précédente qui constituait un point bas (déjà connu fin juillet). La barre des 100 décès n'a toutefois pas été franchie avec un solde à  85 décès en hôpital sur le territoire national.
 
 
 ## Des taux de contamination en hausse
