@@ -1,7 +1,7 @@
 +++
-title = "Les hospitalisations par classe d'âge, historique brut"
+title = "Les historiques bruts par classe d'âge"
 tags = ["covid"]
-date = "2020-08-27"
+date = "2020-08-28"
 +++
 
 
@@ -12,6 +12,10 @@ date = "2020-08-27"
 # L'historique des hospitalisations en France par classe d'âge <a name="graphique"></a>
 
 {{< graph-h3hospraw >}}
+
+# L'historique des soins intensifs et des réanimations en France par classe d'âge <a name="graphique"></a>
+
+{{< graph-h3rearaw >}}
 
 
 ### Incohérences relevées
