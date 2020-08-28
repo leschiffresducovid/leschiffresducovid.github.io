@@ -1,0 +1,48 @@
+<div id="graph-h3rearaw" style="height: 500px; width:1000px"></div>
+
+<script>
+    $.get("/files/h3-rea-raw.csv", function(csv) {
+        var c = Highcharts.chart('graph-h3rearaw', {
+            chart: {
+                type: 'spline',
+                plotBorderWidth: 0,
+                zoomType: 'x',
+                inverted: false,
+            },
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+
+            yAxis: {
+                min: 0,
+                gridLineWidth: 0.30,
+                gridLineColor: '#afbac4',
+                gridLineDashStyle: 'solid',
+            },
+
+            tooltip: {
+                //pointFormat: '{point.name}{point.y}{point.series.name}{point.date}{point.x}',
+                shared: true
+            },
+            legend: {
+                enabled: true,
+                verticalAlign: 'bottom',
+            },
+            title: {
+                text: ""
+            },
+
+            data: {
+                csv: csv,
+            },
+        });
+
+    })
+</script>
+
+
