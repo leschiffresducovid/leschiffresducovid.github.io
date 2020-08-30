@@ -1,7 +1,7 @@
 +++
 title = "Les hospitalisations par classe d'âge"
 tags = ["covid"]
-date = "2020-08-17"
+date = "2020-08-30"
 +++
 
 
