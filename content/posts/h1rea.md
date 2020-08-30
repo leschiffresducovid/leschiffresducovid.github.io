@@ -1,7 +1,7 @@
 +++
 title = "Les soins intensifs et les réanisations par département"
 tags = ["covid"]
-date = "2020-08-17"
+date = "2020-08-30"
 +++
 
 
