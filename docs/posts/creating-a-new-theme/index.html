@@ -832,13 +832,13 @@ $ vi themes/zafta/layouts/partials/footer.html
 <p>It&rsquo;s common to have posts display the date that they were written or published, so let&rsquo;s add that. The front matter of our posts has a variable named &ldquo;date.&rdquo; It&rsquo;s usually the date the content was created, but let&rsquo;s pretend that&rsquo;s the value we want to display.</p>
 <h3 id="add-date-published-to-the-template">Add “Date Published” to the Template</h3>
 <p>We&rsquo;ll start by updating the template used to render the posts. The template code will look like:</p>
-<pre><code>{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}
+<pre><code>{{ .Date.Format &quot;Mon, 2006-02-01&quot; }}
 </code></pre><p>Posts use the default single template, so we&rsquo;ll change that file.</p>
 <pre><code>$ vi themes/zafta/layouts/_default/single.html
 {{ partial &quot;header.html&quot; . }}
 
   &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
-  &lt;h2&gt;{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}&lt;/h2&gt;
+  &lt;h2&gt;{{ .Date.Format &quot;Mon, 2006-02-01&quot; }}&lt;/h2&gt;
   {{ .Content }}
 
 {{ partial &quot;footer.html&quot; . }}
@@ -862,7 +862,7 @@ $ vi themes/zafta/layouts/_default/single.html
 {{ partial &quot;header.html&quot; . }}
 
   &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
-  &lt;h2&gt;{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}&lt;/h2&gt;
+  &lt;h2&gt;{{ .Date.Format &quot;Mon, 2006-02-01&quot; }}&lt;/h2&gt;
   {{ .Content }}
 
 {{ partial &quot;footer.html&quot; . }}
