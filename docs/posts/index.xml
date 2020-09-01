@@ -5,10 +5,20 @@
     <link>https://leschiffresducovid.fr/posts/</link>
     <description>Recent content in Posts on Les chiffres du Covid-19 en France</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leschiffresducovid.fr/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La situation au 30 août 2020</title>
+      <link>https://leschiffresducovid.fr/posts/situation20200830/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leschiffresducovid.fr/posts/situation20200830/</guid>
+      <description>Une fin de mois relativement tranquille dans les hôpitaux Au dimanche 30 août 2020, nous relevons en France 4517 hospitalisations liées au COVID-19 et 396 personnes en soins intensifs ou réanimations.
+Pour les hospitalisations, c’est encore une fois un point bas historique (cf. notre note précédente). La baisse est continue depuis la semaine du 19 avril 2020. Quant aux réanimations, si le niveau reste faible, c’est la troisième semaine en août qui connaît un léger reflux (+25).</description>
+    </item>
     
     <item>
       <title>Le taux de positivité par classe d&#39;âge</title>
