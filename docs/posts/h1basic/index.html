@@ -320,6 +320,30 @@
             name: 'détérioration',
             type: 'polygon',
             data: [[Date.UTC(2020,2,30,0,0,0,0),0],[Date.UTC(2020,2,30,0,0,0,0),12500],
+            [Date.UTC(2020,3,13,0,0,0,0) , 12500],[Date.UTC(2020,3,13,0,0,0,0),0]],
+            color: 'rgba(185,41,45,0.4)',
+            events: {
+                mouseOver() {
+                    this.group.toBack()
+                }
+            }
+        });
+        c.addSeries({
+            name: 'détérioration',
+            type: 'polygon',
+            data: [[Date.UTC(2020,7,10,0,0,0,0),0],[Date.UTC(2020,7,10,0,0,0,0),12500],
+            [Date.UTC(2020,7,10,0,0,0,0) , 12500],[Date.UTC(2020,7,10,0,0,0,0),0]],
+            color: 'rgba(185,41,45,0.4)',
+            events: {
+                mouseOver() {
+                    this.group.toBack()
+                }
+            }
+        });
+        c.addSeries({
+            name: 'détérioration',
+            type: 'polygon',
+            data: [[Date.UTC(2020,7,23,0,0,0,0),0],[Date.UTC(2020,7,23,0,0,0,0),12500],
             [Date.UTC(2020,7,30,0,0,0,0) , 12500],[Date.UTC(2020,7,30,0,0,0,0),0]],
             color: 'rgba(185,41,45,0.4)',
             events: {
