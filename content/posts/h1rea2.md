@@ -1,5 +1,5 @@
 +++
-title = "Les soins intensifs et les réanisations par département et les pics de zone"
+title = "Les soins intensifs et les réanimations par département et les pics de zone"
 tags = ["covid"]
 date = "2020-08-30"
 +++

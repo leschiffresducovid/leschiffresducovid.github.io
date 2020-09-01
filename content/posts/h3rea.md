@@ -14,7 +14,7 @@ date = "2020-08-30"
 
 {{< graph-h3rea >}}
 
-### relativisé selon le pic de la zone
+### relativisé avec le pic de la classe
 
 {{< graph-h3rea2 >}}
 
