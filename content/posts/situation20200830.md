@@ -40,7 +40,7 @@ Si le taux de positivité des tests est à des niveaux jamais atteints jusque l�
 
 Concernant les indicateurs du Ministère (taux d'indicence, ZCA, etc.) justifiant les mesures de prévention dans certaines zones, nous serons probablement obligés de les analyser prochainement pour mieux comprendre les anticipations de l'Etat.
 
-Le résumé de la situation par le <a href="https://solidarites-sante.gouv.fr/actualites/presse/communiques-de-presse/article/point-de-situation-covid-19-communique-de-presse-du-28-aout-2020" target="_blank">Ministère des Solidarités et de la Santé du jeudi 28 août 2020</a>:
+Le résumé de la situation par le <a href="https://solidarites-sante.gouv.fr/actualites/presse/communiques-de-presse/article/point-de-situation-covid-19-communique-de-presse-du-28-aout-2020" target="_blank">Ministère des Solidarités et de la Santé du vendredi 28 août 2020</a>:
     
     "En France métropolitaine, la dynamique de progression de l’épidémie est exponentielle.
     Bien que restant à des niveaux limités, les indicateurs hospitaliers
