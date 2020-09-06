@@ -1,7 +1,7 @@
 +++
 title = "Les hospitalisations par département et les pics de zone"
 tags = ["covid"]
-date = "2020-09-06 20:00:00"
+date = "2020-09-06 17:00:00"
 +++
 
 
