@@ -1,0 +1,152 @@
+<select id="mySelect">
+    <option value="France" id="france">France</option>
+    <option value="Paris" id="paris">Paris/option>
+  </select>
+
+  https://jsfiddle.net/Bastss/daL7nzjr/
+  
+<figure class="highcharts-figure">
+    <div id="zoom-a" style="height: 300px; max-width: 500px; min-width: 250px;"></div>
+    <div id="zoom-b" style="height: 300px; max-width: 500px; min-width: 250px;"></div>
+</figure>
+
+
+<script>
+    Highcharts.chart('bubble-sp13-explanations-a', {
+    
+        chart: {
+            type: 'bubble',
+            events: {
+                load: function() {
+                    var chart = this;
+                    chart.renderer.label('La couleur détermine la position dans le temps de la valeur:', 10, 70)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    })
+                }
+            },
+    
+            plotBorderWidth: 0,
+            zoomType: '',
+        },
+        tooltip: {
+            useHTML: true,
+            formatter: function(){
+                point=this.point;
+                html='<b>' + point.name + '</b>'
+                html+= '</br>' + point.date
+                return html
+            }
+        },
+    
+        legend: {
+            enabled: false,
+            verticalAlign: 'top',
+        },
+    
+        xAxis:{
+            visible: true,
+            type:'category',
+            tickInterval: 10,
+            lineWidth:0,    
+            offset: -90
+        },
+        yAxis:{
+            visible: false,
+        },
+    
+    
+        series: [{
+            data: [
+                { name:'dernière', x: 10, y: 10, z: 10, color: '#3498db', 'date':'16-08-2020'},
+                { name:'précédente', x: 20, y: 10, z: 10, color: '#ffffff', 'date':'02-08-2020'},
+                { name: 'récente', x: 30, y: 10, z: 10, color: '#e74c3c', 'date':'26-07-2020'},
+                { name: '-', x: 35, y: 10, z: 10, color:'#E86333', 'date':'-'},
+                { name:'--', x: 40, y: 10, z: 10, color:'#EB8626', 'date':'--'},
+                { name: '---', x: 45, y: 10, z: 10, color:'#ED9D1D', 'date':'---'},
+                { name:'+ ancienne', x: 50, y: 10, z: 10, color:'#f1c40f', 'date':'22-03-2020'},
+    
+            ]
+        }],
+
+
+    
+    });
+    
+</script>
+
+<script>
+    Highcharts.chart('bubble-sp13-explanations-b', {
+    
+        chart: {
+            type: 'bubble',
+            events: {
+                load: function() {
+                    var chart = this;
+                    chart.renderer.label('La position de la bulle représente la valeur', 10, 45)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label("en absolu pour la catégorie,", 10, 62)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+                    chart.renderer.label('la taille de la bulle représente le nombre de cas positifs', 10, 79)
+                    .add()
+                    .css({
+                        color: '#ffffff',
+                    });
+
+
+                }
+            },
+    
+            plotBorderWidth: 0,
+            zoomType: '',
+        },
+        tooltip: {
+            useHTML: true,
+            formatter: function(){
+                point=this.point;
+                html='<b>' + point.value + '</b>'
+                html+='</br><b>' + point.x + '</b>% taux de positivité'
+                html+= '</br><b>' + point.z + '</b> cas positifs'
+                return html
+            }
+        },
+    
+        legend: {
+            enabled: false
+        },
+    
+        xAxis:{
+            visible: true,
+            type:'category',
+            tickInterval: 2,
+            lineWidth:0,    
+            offset: -90
+        },
+        yAxis:{
+            visible: false,
+        },
+    
+    
+        series: [{
+            data: [
+                { name:'', x: 1, y: 30, z: 5, color: '#E86333', 'value':'petit %, petit nombre de cas'},
+                { name:'', x: 8, y: 30, z: 30, color: '#E86333', 'value':'moyen %, nombre moyen de cas'},
+                { name: '', x: 15, y: 30, z: 30, color: '#E86333', 'value':'grand %, nombre moyen de cas'},
+            ]
+        }],
+
+
+    
+    });
+    
+</script>
+    
+
+

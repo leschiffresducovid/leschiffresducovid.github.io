@@ -2,6 +2,7 @@
 title = "Les sources"
 tags = ["covid"]
 date = "2020-08-14"
+draft = true
 +++
 
 # Les sources de données <a name="sources"></a>
