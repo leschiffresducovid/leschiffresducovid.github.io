@@ -18,7 +18,7 @@ Le nombre de décès n’a toujours pas franchi à la hausse la barre des 100, c
 ## Des taux de contamination toujours plus élevés
 
 Le taux de positivité aux tests virologiques est à <a href="../sp13/" target="_blank">un sommet pour toutes les classes d’âge en-dessous de 70 ans</a> et se dégrade pour toutes.
-Si le nombre de cas recencés en une semaine a légèrement diminué, la proportion atteint désormais 7.09% (6.17% la semaine précédente et 4.84% à notre point du 16 août 2020) pour les 20-29 ans.
+~~Si le nombre de cas recencés en une semaine a légèrement diminué~~[^1], la proportion atteint désormais 7.09% (6.17% la semaine précédente et 4.84% à notre point du 16 août 2020) pour les 20-29 ans.
 
 Pour les 10-19 ans nous relevons 4.88% de tests positifs, 4.59% chez les 30-39 ans et 4.01% chez les moins de 10 ans.
 
@@ -49,3 +49,6 @@ Le résumé de la situation par le <a href="https://solidarites-sante.gouv.fr/ac
     21 départements sont actuellement classés en Zone de circulation active du virus (ZCA)."
 
 nous rend particulièrement dubitatifs face aux conclusions que nous rendons grâce aux relevés hospitaliers et rassemblés selon une fréquence hebdomadaire.
+
+
+[^1]: 3 jours de données manquaient pour les tests de positivité à la date du 30 août 2020. Le taux de positivité reste valable, mais le commentaire sur le nombre de cas recencés était erronné. Mise à jour du 6 septembre 2020.
