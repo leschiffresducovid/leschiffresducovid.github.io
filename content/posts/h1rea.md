@@ -1,7 +1,7 @@
 +++
 title = "Les soins intensifs et les réanimations par département"
 tags = ["covid"]
-date = "2020-09-06 16:00:00"
+date = "2020-09-13 16:00:00"
 +++
 
 
