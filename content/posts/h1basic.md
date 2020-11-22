@@ -1,7 +1,7 @@
 +++
 title = "Les données hospitalières générales en France"
 tags = ["covid"]
-date = "2020-10-11 19:00:00"
+date = "2020-11-22 19:00:00"
 +++
 
 
