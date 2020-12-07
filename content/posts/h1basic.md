@@ -1,7 +1,7 @@
 +++
 title = "Les données hospitalières générales en France"
 tags = ["covid"]
-date = "2020-11-22 19:00:00"
+date = "2020-12-06 19:00:00"
 +++
 
 
@@ -24,6 +24,12 @@ date = "2020-11-22 19:00:00"
 # Le solde hebdomadaire des décès
 
 {{< graph-h1basic4 >}}
+
+# La représentation des cas
+
+{{< graph-h3hosp-parliament >}}
+
+{{< graph-h3rea-parliament >}}
 
 # Les historiques des hospitalisations, soins intensifs/réanimations et des décès relativisés au pic épidémique
 

@@ -1,0 +1,60 @@
+<div id="graph-h3hosp-parliament" style="height: 500px; max-width:1000px; min-width: 250px;"></div>
+
+
+
+<script>
+    Highcharts.chart('graph-h3hosp-parliament', {
+
+    chart: {
+    type: 'item'
+    },
+
+    title: {
+    text: ''
+    },
+
+    subtitle: {
+    text: 'hospitalisés'
+    },
+
+    legend: {
+    labelFormat: '{name} <span style="opacity: 0.4">{true_y}</span>',
+    verticalAlign: 'top',
+    },
+
+    series: [{
+    name: 'hospitalisés',
+    keys: ['name', 'y', 'true_y', 'label'],
+    data: [
+    ['0-9 ans', 1, 60, 'enfants'],
+    ['10-19 ans', 1, 86, 'enfants'],
+    ['20-29 ans', 5, 255, 'jeunes adultes'],
+    ['30-39 ans', 5, 444, 'adultes'],
+    ['40-49 ans', 15, 957, 'adultes'],
+    ['50-59 ans', 35, 2267, 'seniors'],
+    ['60-69 ans', 75, 4820, 'seniors'],
+    ['70-79 ans', 120, 7613, 'vieux'],
+    ['80-89 ans', 160, 10107, 'vieux'],
+    ['>=90 ans', 75, 4666, 'vieux'],
+
+    ],
+    dataLabels: {
+        enabled: true,
+        format: '{point.name}'
+    },
+
+    tooltip: {
+                pointFormat: '<b>{point.true_y}</b> {point.series.name}',
+            },
+
+    // Circular options
+    center: ['50%', '88%'],
+    size: '170%',
+    startAngle: -90,
+    endAngle: 90
+    }]
+    });
+
+</script>
+
+
