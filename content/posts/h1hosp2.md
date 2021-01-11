@@ -1,7 +1,7 @@
 +++
 title = "Les hospitalisations par département et les pics de zone"
 tags = ["covid"]
-date = "2021-01-03 17:00:00"
+date = "2021-01-10 17:00:00"
 +++
 
 
