@@ -1,0 +1,241 @@
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+
+<script src="https://code.highcharts.com/mapdata/countries/fr/fr-all-all.js"></script>
+
+<script>
+    Highcharts.setOptions({
+   
+     lang: {
+       months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+       weekdays: ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'],
+       shortMonths: ['jan', 'fév', 'mar', 'avr', 'mai', 'juin', 'juil', 'aoû', 'sep', 'oct', 'nov', 'déc'],
+     },
+      colors: ['#1abc9c','#3498db','#9b59b6','#2ecc71','#E7E08B','#f1c40f','#e67e22','#e74c3c','#ecf0f1','#95a5a6'],
+      title: {
+        style: {
+          color: '#afbac4'
+        },
+        text: ''
+      },
+      subtitle: {
+        style: {
+          color: '#afbac4' //#c1c2c2
+        },
+        text: ''
+      },
+      legend: {
+        enabled: true,
+        itemStyle: { "color": "#c1c1c2", "cursor": "pointer", "fontSize": "12px", "fontWeight": "bold", "textOverflow": "ellipsis" }
+      },
+      credits: {
+        enabled: false
+      },
+      exporting: { enabled: false },
+      chart: {
+        backgroundColor: '#353B43',
+      },
+      
+      yAxis: {
+        gridLineWidth: 1,
+        gridLineColor: '#353B43',
+        labels: {
+          style: {
+            color: '#afbac4' //#ccc
+            }
+          },
+        title: {
+          style: {
+            color: '#afbac4'//#ccc
+            },
+          text: null,
+          },
+        },
+   
+      xAxis: {
+        gridLineWidth: 0,
+        labels: {
+          style: {
+            color: '#afbac4'//#ccc
+            }
+          },
+        }
+    });
+</script>
+   
+<!--slider-->
+<input type="range" id="h" value=1618178400000 min=1584831600000 max=1618178400000  step="604800000"
+onchange="updateInput(this.value);" oninput="updateInput(this.value)" style="width: 500px">
+<!--date according to the slider-->
+<p id="textInput" placeholder="YYYY-MM-DD"></p>
+    
+<div id="graph-map1" class="chart"></div>
+<div id="graph-map2" class="chart2"></div>
+
+<style>
+  .chart {
+      height: 500px;
+      float: left;
+      width: 50%;
+  }
+
+  .spacer {
+      height: 20px;
+  }
+
+  .chart2 {
+      height: 500px;
+      float: left;
+      width: 50%;
+  }
+</style>
+
+<!--functions for charts-->
+<script>
+  function syncTooltip(container, p) {
+      var i = 1;
+      //console.log(p)
+      for (; i < charts.length; i++) {
+          //console.log(i);
+          //console.log(charts[i].series[0])
+          if (container.id != charts[i].container.id) {
+              if(charts[i].tooltip.shared) {
+                  charts[i].tooltip.refresh([charts[i].series[0].data[p]]);
+              }
+              else {
+                  charts[i].tooltip.refresh(charts[i].series[0].data[p]);
+              }
+          }
+      }
+  }
+
+  var options =  {
+                series:{
+                    point: {
+                        events: {
+                            mouseOver: function(){
+                                //console.log(this.series.chart.container)
+                                syncTooltip(this.series.chart.container, this.index);
+                            }
+                        }
+                    },
+                }
+            }
+    
+  function newFranceMap(filemap, chartname, chartnum, title, subtitle){
+        Highcharts.getJSON(filemap, function (data) {
+        // Instantiate the map
+          charts[chartnum]=Highcharts.mapChart(chartname, {
+            plotOptions: options,
+                chart: {
+                    map: 'countries/fr/fr-all-all',
+                    //borderWidth: 1
+                },
+
+                title: {
+                    text: title,
+                },
+                subtitle: {
+                        text: subtitle
+                },
+
+                /*legend: {
+                    layout: 'vertical',
+                    borderWidth: 0,
+                    //backgroundColor: 'rgba(255,255,255,0.85)',
+                    //floating: true,
+                    verticalAlign: 'top',
+                    align: 'right',
+                    itemMarginTop:50,
+                    //itemMarginBottom:10,
+                },*/
+
+
+                mapNavigation: {
+                    enabled: false,
+                },
+
+                colorAxis: {
+                    layout:'horizontal',
+                    min: 1,
+                    max:100,
+                    //type: 'logarithmic',
+                    minColor: '#EEEEFF',
+                    maxColor: '#000022',
+                    stops: [
+                        [0, '#EFEFFF'],
+                        [0.67, '#4444FF'],
+                        [1, '#000022']
+                    ]
+                },
+
+                series: [{
+                    animation: {
+                        duration: 0 //1000
+                    },
+                    data: data,
+                    keys: ['code', 'value', 'departement'],
+                    //keys: ['hc-key','value'],
+                    //joinBy: 'hc-key',
+                    //joinBy: null,
+                    joinBy: ['hc-key', 'code'],
+                    dataLabels: {
+                        enabled: false,
+                        //color: '#FFFFFF',
+                        format: '{point.code}'
+                    },
+                    name: 'France département',
+                    tooltip: {
+                        pointFormat: '{point.departement}: à {point.value}% du max'
+                    },
+                }]
+            });
+        });
+    }
+
+</script>
+
+<script>
+  var charts = []
+  numWeeks=(h.value-h.min)/(24*3600*7*1000)+1;
+  var filemap = '/files/maps/maps-hosp'
+  filemap = filemap.concat(numWeeks,'.json')
+  //console.log('hjh')
+  newFranceMap(filemap, 'graph-map1',1,'% hospitalisations', 'vs. maximum observé à date')
+  var filemap2 = '/files/maps/maps-rea'
+  filemap2 = filemap2.concat(numWeeks,'.json')
+  newFranceMap(filemap2, 'graph-map2',2,'% réanimations', 'vs. maximum observé à date')
+</script>
+
+<!--what slider does-->
+<script>
+    //1584831600000 = Date.parse("March 22, 2020");
+    //1615071600000 = Date.parse("March 7, 2021");
+    //86400000 = 1 day = 3600*24*1000
+    var rangedate = document.getElementById('h')
+    numWeeks=1
+    initDate = new Date(parseInt(h.value))
+    document.getElementById('textInput').innerHTML = initDate.toLocaleDateString("fr-FR", {year:'numeric', month:'long', day:'numeric'});
+
+    function updateInput(val) {
+        newDate= new Date(parseInt(h.value))
+        document.getElementById('textInput').innerHTML= newDate.toLocaleDateString("fr-FR", {year:'numeric', month:'long', day:'numeric'}); 
+        numWeeks = (h.value-h.min)/(24*3600*7*1000)+1;
+        var filemap = '/files/maps/maps-hosp'
+        filemap = filemap.concat(numWeeks,'.json')
+        newFranceMap(filemap, 'graph-map1',1,'% hospitalisations', 'vs. maximum observé à date')
+        var filemap2 = '/files/maps/maps-rea'
+        filemap2 = filemap2.concat(numWeeks,'.json')
+        newFranceMap(filemap2, 'graph-map2',2,'% réanimations', 'vs. maximum observé à date')
+    }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    //console.log('DONE')
+  }, false);
+</script>
+
+
+
+

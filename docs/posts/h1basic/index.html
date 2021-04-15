@@ -18,8 +18,8 @@
 <meta property="og:description" content="Highcharts.setOptions({lang: {months: [&#39;janvier&#39;, &#39;février&#39;, &#39;mars&#39;, &#39;avril&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juillet&#39;, &#39;août&#39;, &#39;septembre&#39;, &#39;octobre&#39;, &#39;novembre&#39;, &#39;décembre&#39;],weekdays: [&#39;dimanche&#39;, &#39;lundi&#39;, &#39;mardi&#39;, &#39;mercredi&#39;, &#39;jeudi&#39;, &#39;vendredi&#39;, &#39;samedi&#39;],shortMonths: [&#39;jan&#39;, &#39;fév&#39;, &#39;mar&#39;, &#39;avr&#39;, &#39;mai&#39;, &#39;juin&#39;, &#39;juil&#39;, &#39;aoû&#39;, &#39;sep&#39;, &#39;oct&#39;, &#39;nov&#39;, &#39;déc&#39;],},colors: [&#39;#1abc9c&#39;,&#39;#3498db&#39;,&#39;#9b59b6&#39;,&#39;#2ecc71&#39;,&#39;#E7E08B&#39;,&#39;#f1c40f&#39;,&#39;#e67e22&#39;,&#39;#e74c3c&#39;,&#39;#ecf0f1&#39;,&#39;#95a5a6&#39;],title: {style: {color: &#39;#afbac4&#39;},text: &#39;&#39;},subtitle: {style: {color: &#39;#afbac4&#39; },text: &#39;&#39;},legend: {enabled: true,itemStyle: { &#34;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leschiffresducovid.fr/posts/h1basic/" />
-<meta property="article:published_time" content="2021-03-07T19:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-07T19:00:00+00:00" />
+<meta property="article:published_time" content="2021-04-11T19:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-11T19:00:00+00:00" />
 
 
   </head>
@@ -53,7 +53,7 @@
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-          2021-03-07
+          2021-04-11
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -62,7 +62,7 @@
 </svg>
           <a class="tag" href="https://leschiffresducovid.fr/tags/covid/">covid</a></div>
       <nav class="post-nav">
-        <a class="prev" href="/posts/sp13/">
+        <a class="prev" href="/posts/maps/">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z"/>
               <line x1="5" y1="12" x2="19" y2="12" />
@@ -71,7 +71,7 @@
             </svg>
             <span>précédent:</span>
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Le taux de positivité</span>
+            <span class="prev-text nav-default">Les cartes</span>
             <span class="prev-text nav-mobile"></span>
           </a>
         <a class="next" href="/posts/h1hosp/">
@@ -101,6 +101,9 @@
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 <script src="https://code.highcharts.com/modules/item-series.js"></script>
+
+
+
 
 
 <script>
@@ -422,7 +425,7 @@
     },
 
     subtitle: {
-    text: 'hospitalisés, au 7 mars 2021'
+    text: 'hospitalisés, au 11 avril 2021'
     },
 
     legend: {
@@ -434,16 +437,17 @@
     name: 'hospitalisés',
     keys: ['name', 'y', 'true_y', 'label'],
     data: [
-    ['0-9 ans', 1, 32, 'enfants'],
-['10-19 ans', 1, 75, 'enfants'],
-['20-29 ans', 5, 234, 'jeunes adultes'],
-['30-39 ans', 10, 507, 'adultes'],
-['40-49 ans', 20, 918, 'adultes'],
-['50-59 ans', 45, 2199, 'seniors'],
-['60-69 ans', 85, 4208, 'seniors'],
-['70-79 ans', 120, 6028, 'seniors'],
-['80-89 ans', 145, 7229, 'vieux'],
-['>=90 ans', 65, 3189, 'vieux'],
+    ['0-9 ans', 1, 48, 'enfants'],
+['10-19 ans', 1, 102, 'enfants'],
+['20-29 ans', 5, 369, 'jeunes adultes'],
+['30-39 ans', 15, 797, 'adultes'],
+['40-49 ans', 30, 1693, 'adultes'],
+['50-59 ans', 60, 3521, 'seniors'],
+['60-69 ans', 100, 5934, 'seniors'],
+['70-79 ans', 120, 7274, 'seniors'],
+['80-89 ans', 125, 7444, 'vieux'],
+['>=90 ans', 55, 3201, 'vieux'],
+
 
 
 
@@ -490,7 +494,7 @@
     },
 
     subtitle: {
-    text: 'soins intensifs & réanimations, au 7 mars 2021'
+    text: 'soins intensifs & réanimations, au 11 avril 2021'
     },
 
     
@@ -504,16 +508,17 @@
     name: 'en soins intensifs/réanimations',
     keys: ['name', 'y', 'true_y', 'label'],
     data: [
-    ['0-9 ans', 1, 5, 'enfants'],
-['10-19 ans', 1, 11, 'enfants'],
-['20-29 ans', 1, 34, 'jeunes adultes'],
-['30-39 ans', 1, 94, 'adultes'],
-['40-49 ans', 5, 234, 'adultes'],
-['50-59 ans', 15, 623, 'seniors'],
-['60-69 ans', 25, 1211, 'seniors'],
-['70-79 ans', 25, 1187, 'seniors'],
-['80-89 ans', 5, 287, 'vieux'],
-['>=90 ans', 1, 26, 'vieux'],
+    ['0-9 ans', 1, 2, 'enfants'],
+['10-19 ans', 1, 9, 'enfants'],
+['20-29 ans', 1, 50, 'jeunes adultes'],
+['30-39 ans', 5, 185, 'adultes'],
+['40-49 ans', 10, 475, 'adultes'],
+['50-59 ans', 20, 1107, 'seniors'],
+['60-69 ans', 30, 1937, 'seniors'],
+['70-79 ans', 25, 1671, 'seniors'],
+['80-89 ans', 5, 322, 'vieux'],
+['>=90 ans', 1, 30, 'vieux'],
+
 
 
 
@@ -800,7 +805,7 @@
       
       
       <nav class="post-nav">
-        <a class="prev" href="/posts/sp13/">
+        <a class="prev" href="/posts/maps/">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="76" height="76" viewBox="0 0 24 24" stroke-width="1.5" stroke="#57cc8a" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z"/>
               <line x1="5" y1="12" x2="19" y2="12" />
@@ -809,7 +814,7 @@
             </svg>
             <span>précédent:</span>
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Le taux de positivité</span>
+            <span class="prev-text nav-default">Les cartes</span>
             <span class="prev-text nav-mobile"></span>
           </a>
         <a class="next" href="/posts/h1hosp/">

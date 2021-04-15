@@ -1,7 +1,7 @@
 +++
 title = "Les historiques bruts par classe d'âge"
 tags = ["covid"]
-date = "2021-03-07 11:00:00"
+date = "2021-04-11 11:00:00"
 +++
 
 
