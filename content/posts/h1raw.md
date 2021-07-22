@@ -1,7 +1,7 @@
 +++
 title = "Les historiques bruts par département"
 tags = ["covid"]
-date = "2020-06-06 12:00:00"
+date = "2020-07-18 12:00:00"
 draft = true
 +++
 

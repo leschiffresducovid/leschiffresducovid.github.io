@@ -1,7 +1,7 @@
 +++
 title = "Les hospitalisations par département"
 tags = ["covid"]
-date = "2021-06-06 18:00:00"
+date = "2021-07-18 18:00:00"
 +++
 
 
