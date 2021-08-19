@@ -1,7 +1,7 @@
 +++
 title = "Les soins intensifs et les réanimations par département et les pics de zone"
 tags = ["covid"]
-date = "2021-07-18 15:00:00"
+date = "2021-08-15 15:00:00"
 +++
 
 
