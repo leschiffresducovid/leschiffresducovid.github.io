@@ -1,7 +1,7 @@
 +++
 title = "Les soins intensifs et les réanimations par classe d'âge"
 tags = ["covid"]
-date = "2021-08-15 13:00:00"
+date = "2022-02-20 13:00:00"
 +++
 
 
